@@ -4,7 +4,7 @@
 
 CleanMac is a native macOS app, written in Swift and SwiftUI, that measures your disk, explains where the space goes (including the mysterious *System Data*), and cleans junk safely. Everything it removes goes to the Trash first and can be put back from inside the app.
 
-> A demo video and screenshots are coming soon.
+![CleanMac demo: Dashboard, System Data, Junk Cleaner, app details, Developer Cleaner, Performance, Startup Items, Privacy and Automation](docs/demo.gif)
 
 ## Features
 

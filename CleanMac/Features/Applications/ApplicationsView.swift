@@ -66,7 +66,8 @@ struct ApplicationsView: View {
             LeftoversView()
         }
         .onReceive(NotificationCenter.default.publisher(for: ScreenshotMode.detailNotification)) { _ in
-            detailApp = apps.filter { !$0.isProtected }.max { $0.totalSize < $1.totalSize }
+            // Opens the largest app's details; a second notification closes them.
+            detailApp = detailApp == nil ? apps.filter { !$0.isProtected }.max { $0.totalSize < $1.totalSize } : nil
         }
     }
 

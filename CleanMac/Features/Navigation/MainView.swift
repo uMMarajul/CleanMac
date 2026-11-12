@@ -114,12 +114,51 @@ struct MainView: View {
             Text("Only an administrator can read these folders. macOS will ask for your password. CleanMac only reads their sizes and never changes them.")
         }
         .task {
-            if ScreenshotMode.isActive { await takeScreenshots() }
+            if ScreenshotMode.demoFolder != nil {
+                await recordDemo()
+            } else if ScreenshotMode.isActive {
+                await takeScreenshots()
+            }
         }
     }
 
     private func go(_ section: SidebarSection) {
         selection = section
+    }
+
+    /// Demo GIF frames (see `ScreenshotMode`): a tour of the main screens, then quits.
+    /// Each screen gets a moment to load before recording starts, so the demo shows no spinners.
+    private func recordDemo() async {
+        await ScreenshotMode.wait(until: { ScreenshotMode.mainWindow() != nil }, timeout: 10)
+        guard let window = ScreenshotMode.mainWindow() else { return NSApp.terminate(nil) }
+        window.setContentSize(NSSize(width: 1200, height: 780))
+        window.center()
+        scan.startQuickScan(fullDiskAccess: permissions.hasFullDiskAccess) // ready by the Junk Cleaner step
+
+        func show(_ section: SidebarSection, load: Double = 1.5, record seconds: Double) async {
+            selection = section
+            await ScreenshotMode.wait(load)
+            await ScreenshotMode.record(window, seconds: seconds)
+        }
+
+        await show(.dashboard, load: 6, record: 3.5)
+        await show(.systemData, record: 3)
+        selection = .junkCleaner
+        await ScreenshotMode.wait(until: { !scan.quickScanning }, timeout: 180)
+        await show(.junkCleaner, load: 1, record: 2.5)
+        await show(.applications, record: 1.5)
+        NotificationCenter.default.post(name: ScreenshotMode.detailNotification, object: nil)
+        await ScreenshotMode.wait(3)
+        await ScreenshotMode.record(window, seconds: 3.5)
+        NotificationCenter.default.post(name: ScreenshotMode.detailNotification, object: nil) // closes it
+        await ScreenshotMode.wait(1)
+        await show(.developerCleaner, load: 2, record: 2.5)
+        await show(.performance, load: 4, record: 4)
+        await show(.startupItems, load: 2, record: 2.5)
+        await show(.privacy, load: 6, record: 3)
+        await show(.automation, record: 2)
+        await show(.dashboard, load: 1, record: 1.5)
+        NSApp.terminate(nil)
     }
 
     /// README screenshots (see `ScreenshotMode`): visits each screen, captures the window, quits.
