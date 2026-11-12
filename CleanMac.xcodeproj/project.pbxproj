@@ -1,0 +1,874 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09E2D09A27D9F185C3B11C5F /* StartupItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D479C443657CB9A69BB320E /* StartupItemsView.swift */; };
+		0A941CFB38F3C62460E7940C /* AppsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCC4D084AF67B6A47698092 /* AppsStore.swift */; };
+		11C0FB349B63C24807C25367 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5955282CB003DC192EAB5A79 /* MenuBarView.swift */; };
+		12730B14A59B93113D313A04 /* AppDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7049C8F45E3F69A13E2A9C /* AppDetailView.swift */; };
+		14F161CA856DAF64AC858EE4 /* ScreenshotMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD428C1C377168E68442099 /* ScreenshotMode.swift */; };
+		15C86C993B0744689E4E2EB5 /* CleanMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D29A31E202A1CF26227D239 /* CleanMacApp.swift */; };
+		16599D6CF751923487DAF342 /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6835C930C58CDC13F5DDE42 /* PrivacyView.swift */; };
+		1FAAFA5FE591F22009BD9D10 /* Automation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEAD24416E9E53E88A072 /* Automation.swift */; };
+		2264B4AB00EEA78B7B92A271 /* DeveloperCleanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA2AF0AA19DE6FC2E9FC4C4 /* DeveloperCleanerView.swift */; };
+		272B728BA26D17A24F8E1E88 /* CleanupFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2AD98C76CFDE518B71D327 /* CleanupFlow.swift */; };
+		2E93DFFF237F9C2D6762D3FC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3E7A094A2737F07EF28C96 /* SettingsView.swift */; };
+		2EC4E58E4E5A76CC146212F3 /* DiskInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC458B7E21CC8BAE6D2F781 /* DiskInfo.swift */; };
+		34C95DCBF5ECBA123189BEA2 /* LargeFilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1599C0365E6540AB6AC162B /* LargeFilesView.swift */; };
+		359EC5E3B8B46EE0CD0455CC /* SystemStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801CDDF4C13975485FE56957 /* SystemStats.swift */; };
+		3612624565C0C92407947A92 /* PerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33605C58E087E678D776479 /* PerformanceView.swift */; };
+		3A1FC2AF7C2D339E31C534A6 /* AppInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABA98570D94B3B400409900 /* AppInventory.swift */; };
+		46686335484612F5662847E2 /* OrphanFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB33DEA7F6D6D2CDB550B4B5 /* OrphanFinder.swift */; };
+		5437754214FD22810E5CBDCD /* StartupItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBA4F079BF9CB4A4BF65533 /* StartupItems.swift */; };
+		57242AAF533E2E4115C06159 /* BrowserInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6766329E4C4A8B8C63EBD8 /* BrowserInspector.swift */; };
+		59CF41DF30C4BBAE28CFD7E5 /* AdminHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4E4F7CB24C9B6BD67BB827 /* AdminHelper.swift */; };
+		5A88BF8B170C6E8BD364C454 /* AdminHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C25595C98F782C87C0F0665 /* AdminHelperTests.swift */; };
+		5C36B2507DCAE75E5E150981 /* AutomationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34E0F621A9B241716F5E8A /* AutomationView.swift */; };
+		60C5C56CD6E65C50AFCC233F /* SystemDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C5219D3CC199E7EB62259B /* SystemDataView.swift */; };
+		6156A91A8EEB39D0569C65DF /* OrphanAndDeveloperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BBAC8179036608F415E99C /* OrphanAndDeveloperTests.swift */; };
+		62321FE171AEF8D1253AF9BF /* StorageScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F579E619732DA0EAE51D0CA7 /* StorageScannerTests.swift */; };
+		629662AAE1A40F49C35A596C /* CleanupEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B4A079599FB0655F2AA36F /* CleanupEngine.swift */; };
+		654CD7BC80F7BFAAD21BA18F /* LeftoversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD7F485E152DE9BDD161A6 /* LeftoversView.swift */; };
+		683F0B46268E517A9D84C521 /* DuplicateFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2CD5FE362708246CD4901D /* DuplicateFinderTests.swift */; };
+		6EEFCC07735E1EACE058A48A /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BB772B4C105DC8A8566BA /* Common.swift */; };
+		7452E6EE9F48B0D4BA5C60BA /* DuplicateFinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602141094524E9784F7DE054 /* DuplicateFinderView.swift */; };
+		78C91CD542BFF42ED11B35BC /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E1CD54F72A4E0D6DD63B70 /* DashboardView.swift */; };
+		7D7BE702986B39EDB79F782D /* DuplicateFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12799531E4C9DA4896811437 /* DuplicateFinder.swift */; };
+		82AFDD4F1931EB2B8BA15EA5 /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD4B19362D011DEE25D803B /* PermissionManager.swift */; };
+		83E960D19872E5D8CFD914AB /* Phase6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A5DCFEA091800426802925 /* Phase6Tests.swift */; };
+		8AE24C759B6D9187B01ED792 /* CleanupHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54100745002F2A7177CC8C3 /* CleanupHistoryView.swift */; };
+		932B8C592FAE5827ACB73D94 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D9EE641ED1C0D2DEA989D5 /* MainView.swift */; };
+		989A2B8ECC89FFBF216FFE3D /* ApplicationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B42B7D0301839D9A203120 /* ApplicationsView.swift */; };
+		9F50597CB4E48DCCDA71F2E1 /* Recommendations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6B53BFED3C302D784008F /* Recommendations.swift */; };
+		B10396298CF4FE40778308C6 /* CleanupEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E459321227970FA2DB0355F /* CleanupEngineTests.swift */; };
+		B4262A9881947F8435173AFD /* AppPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573807ECC9A00F61FB656B14 /* AppPermissions.swift */; };
+		B6F9780CE03358347363A84C /* PerformanceAndStartupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F438C1313645EBA628375 /* PerformanceAndStartupTests.swift */; };
+		BA7288F15B7B3F08DE6033F3 /* ScanStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215D498A57EF899AEE762BD9 /* ScanStore.swift */; };
+		BA8CA108CE81B0DB2B622B1E /* PerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A8CA1AB3C97BF9179F0B07 /* PerformanceMonitor.swift */; };
+		BE0C716ACF1F05FB65B59532 /* SmartScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0D32A510CFB1BD34FCD782 /* SmartScanView.swift */; };
+		C45099CC57824E1B2186BFD3 /* StorageScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46004EFD2CF537077B86FFB4 /* StorageScanner.swift */; };
+		CA67D95DB882CDCBEC9F6970 /* JunkCleanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA7C873CDBBC3FF368BD57F /* JunkCleanerView.swift */; };
+		CDA00D88137CCA060A04BAE8 /* DeveloperTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF495299B0B934BCE11345A /* DeveloperTools.swift */; };
+		D26490132DFA99F82EE54241 /* ScanResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EA58CF437DD43E8253331C /* ScanResult.swift */; };
+		D4B2CA56BA4F1CE6D954CE03 /* StorageExplorerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354DB6573E1BACE05115B1EA /* StorageExplorerView.swift */; };
+		E383FAA3292666C009FB3E7E /* AppInventoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2824E7BE3B5B9623D507E4B9 /* AppInventoryTests.swift */; };
+		F84B325C9A15351B7C73B2AC /* StorageCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8FDE1AB129F64B2BE2CCB /* StorageCategory.swift */; };
+		FC87A339182C7DBBEEFCDB31 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D4D52E51928EEB8D1082C9 /* Models.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE84965C0FDAABDB5C92F2E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E435598BB8F57054B1DB5432 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C898882A1195C1A5FD6EAC5;
+			remoteInfo = CleanMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C25595C98F782C87C0F0665 /* AdminHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHelperTests.swift; sourceTree = "<group>"; };
+		0D479C443657CB9A69BB320E /* StartupItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupItemsView.swift; sourceTree = "<group>"; };
+		0FD4B19362D011DEE25D803B /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
+		12799531E4C9DA4896811437 /* DuplicateFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplicateFinder.swift; sourceTree = "<group>"; };
+		15CB264AE6622A24D0D387FD /* CleanMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E459321227970FA2DB0355F /* CleanupEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanupEngineTests.swift; sourceTree = "<group>"; };
+		215D498A57EF899AEE762BD9 /* ScanStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanStore.swift; sourceTree = "<group>"; };
+		21E1CD54F72A4E0D6DD63B70 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		2824E7BE3B5B9623D507E4B9 /* AppInventoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInventoryTests.swift; sourceTree = "<group>"; };
+		2EB8FDE1AB129F64B2BE2CCB /* StorageCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageCategory.swift; sourceTree = "<group>"; };
+		354DB6573E1BACE05115B1EA /* StorageExplorerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageExplorerView.swift; sourceTree = "<group>"; };
+		37D9EE641ED1C0D2DEA989D5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		3F5F438C1313645EBA628375 /* PerformanceAndStartupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceAndStartupTests.swift; sourceTree = "<group>"; };
+		430BB772B4C105DC8A8566BA /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		46004EFD2CF537077B86FFB4 /* StorageScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageScanner.swift; sourceTree = "<group>"; };
+		46C5219D3CC199E7EB62259B /* SystemDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemDataView.swift; sourceTree = "<group>"; };
+		573807ECC9A00F61FB656B14 /* AppPermissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPermissions.swift; sourceTree = "<group>"; };
+		5955282CB003DC192EAB5A79 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		602141094524E9784F7DE054 /* DuplicateFinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplicateFinderView.swift; sourceTree = "<group>"; };
+		6AF495299B0B934BCE11345A /* DeveloperTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperTools.swift; sourceTree = "<group>"; };
+		6B4E4F7CB24C9B6BD67BB827 /* AdminHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHelper.swift; sourceTree = "<group>"; };
+		6FA7C873CDBBC3FF368BD57F /* JunkCleanerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JunkCleanerView.swift; sourceTree = "<group>"; };
+		77A8CA1AB3C97BF9179F0B07 /* PerformanceMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceMonitor.swift; sourceTree = "<group>"; };
+		78D6B53BFED3C302D784008F /* Recommendations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recommendations.swift; sourceTree = "<group>"; };
+		7ABA98570D94B3B400409900 /* AppInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInventory.swift; sourceTree = "<group>"; };
+		7C2AD98C76CFDE518B71D327 /* CleanupFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanupFlow.swift; sourceTree = "<group>"; };
+		7DBA4F079BF9CB4A4BF65533 /* StartupItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupItems.swift; sourceTree = "<group>"; };
+		801CDDF4C13975485FE56957 /* SystemStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemStats.swift; sourceTree = "<group>"; };
+		81B42B7D0301839D9A203120 /* ApplicationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationsView.swift; sourceTree = "<group>"; };
+		81B4A079599FB0655F2AA36F /* CleanupEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanupEngine.swift; sourceTree = "<group>"; };
+		88D9B2DA6DF7BC0EC1D0F8BC /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
+		8A2CD5FE362708246CD4901D /* DuplicateFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplicateFinderTests.swift; sourceTree = "<group>"; };
+		8CD428C1C377168E68442099 /* ScreenshotMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotMode.swift; sourceTree = "<group>"; };
+		8D6766329E4C4A8B8C63EBD8 /* BrowserInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserInspector.swift; sourceTree = "<group>"; };
+		9C0D32A510CFB1BD34FCD782 /* SmartScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartScanView.swift; sourceTree = "<group>"; };
+		9CCC4D084AF67B6A47698092 /* AppsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsStore.swift; sourceTree = "<group>"; };
+		9D29A31E202A1CF26227D239 /* CleanMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanMacApp.swift; sourceTree = "<group>"; };
+		A38DEAD24416E9E53E88A072 /* Automation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automation.swift; sourceTree = "<group>"; };
+		A6A5DCFEA091800426802925 /* Phase6Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase6Tests.swift; sourceTree = "<group>"; };
+		B2BBAC8179036608F415E99C /* OrphanAndDeveloperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrphanAndDeveloperTests.swift; sourceTree = "<group>"; };
+		BB33DEA7F6D6D2CDB550B4B5 /* OrphanFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrphanFinder.swift; sourceTree = "<group>"; };
+		C33605C58E087E678D776479 /* PerformanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceView.swift; sourceTree = "<group>"; };
+		C6835C930C58CDC13F5DDE42 /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
+		CCC458B7E21CC8BAE6D2F781 /* DiskInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskInfo.swift; sourceTree = "<group>"; };
+		CE34E0F621A9B241716F5E8A /* AutomationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomationView.swift; sourceTree = "<group>"; };
+		CFA2AF0AA19DE6FC2E9FC4C4 /* DeveloperCleanerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperCleanerView.swift; sourceTree = "<group>"; };
+		D1F7F22147512DDEFA3B68DC /* CleanMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D54100745002F2A7177CC8C3 /* CleanupHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanupHistoryView.swift; sourceTree = "<group>"; };
+		D9DD7F485E152DE9BDD161A6 /* LeftoversView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftoversView.swift; sourceTree = "<group>"; };
+		DF3E7A094A2737F07EF28C96 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E1599C0365E6540AB6AC162B /* LargeFilesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeFilesView.swift; sourceTree = "<group>"; };
+		E3D4D52E51928EEB8D1082C9 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		E9EA58CF437DD43E8253331C /* ScanResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanResult.swift; sourceTree = "<group>"; };
+		F579E619732DA0EAE51D0CA7 /* StorageScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageScannerTests.swift; sourceTree = "<group>"; };
+		FC7049C8F45E3F69A13E2A9C /* AppDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		03391FDB25BE9AD76BAFD57B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DF3E7A094A2737F07EF28C96 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		12C3925BE6EC3D40D71AE7CB /* Performance */ = {
+			isa = PBXGroup;
+			children = (
+				77A8CA1AB3C97BF9179F0B07 /* PerformanceMonitor.swift */,
+				801CDDF4C13975485FE56957 /* SystemStats.swift */,
+			);
+			path = Performance;
+			sourceTree = "<group>";
+		};
+		19444F3361C56E164C561CA1 /* Cleanup */ = {
+			isa = PBXGroup;
+			children = (
+				81B4A079599FB0655F2AA36F /* CleanupEngine.swift */,
+			);
+			path = Cleanup;
+			sourceTree = "<group>";
+		};
+		19EAAFC1F1657FB20464A6CB /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				0D479C443657CB9A69BB320E /* StartupItemsView.swift */,
+			);
+			path = Startup;
+			sourceTree = "<group>";
+		};
+		248D99DB6709CA0BDBA27675 /* Privacy */ = {
+			isa = PBXGroup;
+			children = (
+				573807ECC9A00F61FB656B14 /* AppPermissions.swift */,
+				8D6766329E4C4A8B8C63EBD8 /* BrowserInspector.swift */,
+			);
+			path = Privacy;
+			sourceTree = "<group>";
+		};
+		2537986BA60AF05808D44746 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				21E1CD54F72A4E0D6DD63B70 /* DashboardView.swift */,
+				78D6B53BFED3C302D784008F /* Recommendations.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		25F877B3D9809886BAAD6953 /* SmartScan */ = {
+			isa = PBXGroup;
+			children = (
+				9C0D32A510CFB1BD34FCD782 /* SmartScanView.swift */,
+			);
+			path = SmartScan;
+			sourceTree = "<group>";
+		};
+		33988A994F2759726C190258 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15CB264AE6622A24D0D387FD /* CleanMac.app */,
+				D1F7F22147512DDEFA3B68DC /* CleanMacTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39927E242AB0921FC2248949 /* Privacy */ = {
+			isa = PBXGroup;
+			children = (
+				C6835C930C58CDC13F5DDE42 /* PrivacyView.swift */,
+			);
+			path = Privacy;
+			sourceTree = "<group>";
+		};
+		3B0E1A4D40885AC5FCBDB2D8 /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				7DBA4F079BF9CB4A4BF65533 /* StartupItems.swift */,
+			);
+			path = Startup;
+			sourceTree = "<group>";
+		};
+		3B813B5688CA72EF804C2B6C /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				E3D4D52E51928EEB8D1082C9 /* Models.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		3E141E56EBEED808CFE3D9BF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9D29A31E202A1CF26227D239 /* CleanMacApp.swift */,
+				8CD428C1C377168E68442099 /* ScreenshotMode.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5554E3FACCD9EF4D255916C2 /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				5955282CB003DC192EAB5A79 /* MenuBarView.swift */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		5DE563871F34285F8EE51991 /* Developer */ = {
+			isa = PBXGroup;
+			children = (
+				6AF495299B0B934BCE11345A /* DeveloperTools.swift */,
+			);
+			path = Developer;
+			sourceTree = "<group>";
+		};
+		60B286F462A7D8ED044DD043 /* LargeFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E1599C0365E6540AB6AC162B /* LargeFilesView.swift */,
+			);
+			path = LargeFiles;
+			sourceTree = "<group>";
+		};
+		68C273178825EDB8836DC82C /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				CCC458B7E21CC8BAE6D2F781 /* DiskInfo.swift */,
+				E9EA58CF437DD43E8253331C /* ScanResult.swift */,
+				215D498A57EF899AEE762BD9 /* ScanStore.swift */,
+				2EB8FDE1AB129F64B2BE2CCB /* StorageCategory.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		6CBB718651C7B7EA351A96D0 /* Duplicates */ = {
+			isa = PBXGroup;
+			children = (
+				12799531E4C9DA4896811437 /* DuplicateFinder.swift */,
+			);
+			path = Duplicates;
+			sourceTree = "<group>";
+		};
+		6D65CEF5F023CAD0488AA718 /* Performance */ = {
+			isa = PBXGroup;
+			children = (
+				C33605C58E087E678D776479 /* PerformanceView.swift */,
+			);
+			path = Performance;
+			sourceTree = "<group>";
+		};
+		6E441110291AF4C1EAC13799 /* CleanMac */ = {
+			isa = PBXGroup;
+			children = (
+				3E141E56EBEED808CFE3D9BF /* App */,
+				8372CBBCC06658CBEC590FDB /* Core */,
+				3B813B5688CA72EF804C2B6C /* Database */,
+				9B01D5E109D146794E988CC4 /* Features */,
+			);
+			path = CleanMac;
+			sourceTree = "<group>";
+		};
+		7284B7730EB8365E186E634E /* StorageExplorer */ = {
+			isa = PBXGroup;
+			children = (
+				354DB6573E1BACE05115B1EA /* StorageExplorerView.swift */,
+			);
+			path = StorageExplorer;
+			sourceTree = "<group>";
+		};
+		73545E2049D73DE166867026 /* CleanMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C25595C98F782C87C0F0665 /* AdminHelperTests.swift */,
+				2824E7BE3B5B9623D507E4B9 /* AppInventoryTests.swift */,
+				1E459321227970FA2DB0355F /* CleanupEngineTests.swift */,
+				8A2CD5FE362708246CD4901D /* DuplicateFinderTests.swift */,
+				B2BBAC8179036608F415E99C /* OrphanAndDeveloperTests.swift */,
+				3F5F438C1313645EBA628375 /* PerformanceAndStartupTests.swift */,
+				A6A5DCFEA091800426802925 /* Phase6Tests.swift */,
+				F579E619732DA0EAE51D0CA7 /* StorageScannerTests.swift */,
+			);
+			path = CleanMacTests;
+			sourceTree = "<group>";
+		};
+		7568A7CA0AF6F3D2EAEC95E4 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				88D9B2DA6DF7BC0EC1D0F8BC /* Signing.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		75F87F1901D47E70A9E6E99D /* FileSystem */ = {
+			isa = PBXGroup;
+			children = (
+				46004EFD2CF537077B86FFB4 /* StorageScanner.swift */,
+			);
+			path = FileSystem;
+			sourceTree = "<group>";
+		};
+		778A3647549460126C8441BF /* DuplicateFinder */ = {
+			isa = PBXGroup;
+			children = (
+				602141094524E9784F7DE054 /* DuplicateFinderView.swift */,
+			);
+			path = DuplicateFinder;
+			sourceTree = "<group>";
+		};
+		7F29E64BB30EC8F80854C4F0 /* DeveloperCleaner */ = {
+			isa = PBXGroup;
+			children = (
+				CFA2AF0AA19DE6FC2E9FC4C4 /* DeveloperCleanerView.swift */,
+			);
+			path = DeveloperCleaner;
+			sourceTree = "<group>";
+		};
+		8372CBBCC06658CBEC590FDB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				958C02D2FCEF6818C673CD7B /* Apps */,
+				AFBA2422734F0C124FCEB67F /* Automation */,
+				19444F3361C56E164C561CA1 /* Cleanup */,
+				5DE563871F34285F8EE51991 /* Developer */,
+				6CBB718651C7B7EA351A96D0 /* Duplicates */,
+				75F87F1901D47E70A9E6E99D /* FileSystem */,
+				12C3925BE6EC3D40D71AE7CB /* Performance */,
+				9A4EE2E72FDDE4655F26E2C6 /* Permissions */,
+				248D99DB6709CA0BDBA27675 /* Privacy */,
+				3B0E1A4D40885AC5FCBDB2D8 /* Startup */,
+				68C273178825EDB8836DC82C /* Storage */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		848CC90CB7DA4E7B389E52FD = {
+			isa = PBXGroup;
+			children = (
+				6E441110291AF4C1EAC13799 /* CleanMac */,
+				73545E2049D73DE166867026 /* CleanMacTests */,
+				7568A7CA0AF6F3D2EAEC95E4 /* Config */,
+				33988A994F2759726C190258 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A48942E03312742272473EA /* Automation */ = {
+			isa = PBXGroup;
+			children = (
+				CE34E0F621A9B241716F5E8A /* AutomationView.swift */,
+			);
+			path = Automation;
+			sourceTree = "<group>";
+		};
+		93EAEC5EBFD6A0B4603E326D /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				FC7049C8F45E3F69A13E2A9C /* AppDetailView.swift */,
+				81B42B7D0301839D9A203120 /* ApplicationsView.swift */,
+				D9DD7F485E152DE9BDD161A6 /* LeftoversView.swift */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		958C02D2FCEF6818C673CD7B /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				7ABA98570D94B3B400409900 /* AppInventory.swift */,
+				9CCC4D084AF67B6A47698092 /* AppsStore.swift */,
+				BB33DEA7F6D6D2CDB550B4B5 /* OrphanFinder.swift */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		9A4EE2E72FDDE4655F26E2C6 /* Permissions */ = {
+			isa = PBXGroup;
+			children = (
+				6B4E4F7CB24C9B6BD67BB827 /* AdminHelper.swift */,
+				0FD4B19362D011DEE25D803B /* PermissionManager.swift */,
+			);
+			path = Permissions;
+			sourceTree = "<group>";
+		};
+		9B01D5E109D146794E988CC4 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				93EAEC5EBFD6A0B4603E326D /* Applications */,
+				8A48942E03312742272473EA /* Automation */,
+				C991293A600EE1686CD1C550 /* CleanupHistory */,
+				2537986BA60AF05808D44746 /* Dashboard */,
+				7F29E64BB30EC8F80854C4F0 /* DeveloperCleaner */,
+				778A3647549460126C8441BF /* DuplicateFinder */,
+				D9E9C0190D7F631F165C4043 /* JunkCleaner */,
+				60B286F462A7D8ED044DD043 /* LargeFiles */,
+				5554E3FACCD9EF4D255916C2 /* MenuBar */,
+				E6803A08FC3245901C8A4765 /* Navigation */,
+				6D65CEF5F023CAD0488AA718 /* Performance */,
+				39927E242AB0921FC2248949 /* Privacy */,
+				03391FDB25BE9AD76BAFD57B /* Settings */,
+				BA30546CAC6776C14B0A4EDD /* Shared */,
+				25F877B3D9809886BAAD6953 /* SmartScan */,
+				19EAAFC1F1657FB20464A6CB /* Startup */,
+				7284B7730EB8365E186E634E /* StorageExplorer */,
+				A85B27BF627C665AEE78DEF6 /* SystemData */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A85B27BF627C665AEE78DEF6 /* SystemData */ = {
+			isa = PBXGroup;
+			children = (
+				46C5219D3CC199E7EB62259B /* SystemDataView.swift */,
+			);
+			path = SystemData;
+			sourceTree = "<group>";
+		};
+		AFBA2422734F0C124FCEB67F /* Automation */ = {
+			isa = PBXGroup;
+			children = (
+				A38DEAD24416E9E53E88A072 /* Automation.swift */,
+			);
+			path = Automation;
+			sourceTree = "<group>";
+		};
+		BA30546CAC6776C14B0A4EDD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7C2AD98C76CFDE518B71D327 /* CleanupFlow.swift */,
+				430BB772B4C105DC8A8566BA /* Common.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		C991293A600EE1686CD1C550 /* CleanupHistory */ = {
+			isa = PBXGroup;
+			children = (
+				D54100745002F2A7177CC8C3 /* CleanupHistoryView.swift */,
+			);
+			path = CleanupHistory;
+			sourceTree = "<group>";
+		};
+		D9E9C0190D7F631F165C4043 /* JunkCleaner */ = {
+			isa = PBXGroup;
+			children = (
+				6FA7C873CDBBC3FF368BD57F /* JunkCleanerView.swift */,
+			);
+			path = JunkCleaner;
+			sourceTree = "<group>";
+		};
+		E6803A08FC3245901C8A4765 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				37D9EE641ED1C0D2DEA989D5 /* MainView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C898882A1195C1A5FD6EAC5 /* CleanMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 308F08FB0795066CE9AC4ADA /* Build configuration list for PBXNativeTarget "CleanMac" */;
+			buildPhases = (
+				E497258AF2028F69E98E51FB /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CleanMac;
+			packageProductDependencies = (
+			);
+			productName = CleanMac;
+			productReference = 15CB264AE6622A24D0D387FD /* CleanMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC945C435ADF9F4AEC7F4590 /* CleanMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F924631B66581A2CEC67C0D /* Build configuration list for PBXNativeTarget "CleanMacTests" */;
+			buildPhases = (
+				D730A7DAEEEBA16B59CA7F24 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B465840A7CA7B0953CBC64A /* PBXTargetDependency */,
+			);
+			name = CleanMacTests;
+			packageProductDependencies = (
+			);
+			productName = CleanMacTests;
+			productReference = D1F7F22147512DDEFA3B68DC /* CleanMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E435598BB8F57054B1DB5432 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					0C898882A1195C1A5FD6EAC5 = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 5AB2F4CF51C7D579CE02DC32 /* Build configuration list for PBXProject "CleanMac" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 848CC90CB7DA4E7B389E52FD;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 33988A994F2759726C190258 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C898882A1195C1A5FD6EAC5 /* CleanMac */,
+				FC945C435ADF9F4AEC7F4590 /* CleanMacTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D730A7DAEEEBA16B59CA7F24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A88BF8B170C6E8BD364C454 /* AdminHelperTests.swift in Sources */,
+				E383FAA3292666C009FB3E7E /* AppInventoryTests.swift in Sources */,
+				B10396298CF4FE40778308C6 /* CleanupEngineTests.swift in Sources */,
+				683F0B46268E517A9D84C521 /* DuplicateFinderTests.swift in Sources */,
+				6156A91A8EEB39D0569C65DF /* OrphanAndDeveloperTests.swift in Sources */,
+				B6F9780CE03358347363A84C /* PerformanceAndStartupTests.swift in Sources */,
+				83E960D19872E5D8CFD914AB /* Phase6Tests.swift in Sources */,
+				62321FE171AEF8D1253AF9BF /* StorageScannerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E497258AF2028F69E98E51FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59CF41DF30C4BBAE28CFD7E5 /* AdminHelper.swift in Sources */,
+				12730B14A59B93113D313A04 /* AppDetailView.swift in Sources */,
+				3A1FC2AF7C2D339E31C534A6 /* AppInventory.swift in Sources */,
+				B4262A9881947F8435173AFD /* AppPermissions.swift in Sources */,
+				989A2B8ECC89FFBF216FFE3D /* ApplicationsView.swift in Sources */,
+				0A941CFB38F3C62460E7940C /* AppsStore.swift in Sources */,
+				1FAAFA5FE591F22009BD9D10 /* Automation.swift in Sources */,
+				5C36B2507DCAE75E5E150981 /* AutomationView.swift in Sources */,
+				57242AAF533E2E4115C06159 /* BrowserInspector.swift in Sources */,
+				15C86C993B0744689E4E2EB5 /* CleanMacApp.swift in Sources */,
+				629662AAE1A40F49C35A596C /* CleanupEngine.swift in Sources */,
+				272B728BA26D17A24F8E1E88 /* CleanupFlow.swift in Sources */,
+				8AE24C759B6D9187B01ED792 /* CleanupHistoryView.swift in Sources */,
+				6EEFCC07735E1EACE058A48A /* Common.swift in Sources */,
+				78C91CD542BFF42ED11B35BC /* DashboardView.swift in Sources */,
+				2264B4AB00EEA78B7B92A271 /* DeveloperCleanerView.swift in Sources */,
+				CDA00D88137CCA060A04BAE8 /* DeveloperTools.swift in Sources */,
+				2EC4E58E4E5A76CC146212F3 /* DiskInfo.swift in Sources */,
+				7D7BE702986B39EDB79F782D /* DuplicateFinder.swift in Sources */,
+				7452E6EE9F48B0D4BA5C60BA /* DuplicateFinderView.swift in Sources */,
+				CA67D95DB882CDCBEC9F6970 /* JunkCleanerView.swift in Sources */,
+				34C95DCBF5ECBA123189BEA2 /* LargeFilesView.swift in Sources */,
+				654CD7BC80F7BFAAD21BA18F /* LeftoversView.swift in Sources */,
+				932B8C592FAE5827ACB73D94 /* MainView.swift in Sources */,
+				11C0FB349B63C24807C25367 /* MenuBarView.swift in Sources */,
+				FC87A339182C7DBBEEFCDB31 /* Models.swift in Sources */,
+				46686335484612F5662847E2 /* OrphanFinder.swift in Sources */,
+				BA8CA108CE81B0DB2B622B1E /* PerformanceMonitor.swift in Sources */,
+				3612624565C0C92407947A92 /* PerformanceView.swift in Sources */,
+				82AFDD4F1931EB2B8BA15EA5 /* PermissionManager.swift in Sources */,
+				16599D6CF751923487DAF342 /* PrivacyView.swift in Sources */,
+				9F50597CB4E48DCCDA71F2E1 /* Recommendations.swift in Sources */,
+				D26490132DFA99F82EE54241 /* ScanResult.swift in Sources */,
+				BA7288F15B7B3F08DE6033F3 /* ScanStore.swift in Sources */,
+				14F161CA856DAF64AC858EE4 /* ScreenshotMode.swift in Sources */,
+				2E93DFFF237F9C2D6762D3FC /* SettingsView.swift in Sources */,
+				BE0C716ACF1F05FB65B59532 /* SmartScanView.swift in Sources */,
+				5437754214FD22810E5CBDCD /* StartupItems.swift in Sources */,
+				09E2D09A27D9F185C3B11C5F /* StartupItemsView.swift in Sources */,
+				F84B325C9A15351B7C73B2AC /* StorageCategory.swift in Sources */,
+				D4B2CA56BA4F1CE6D954CE03 /* StorageExplorerView.swift in Sources */,
+				C45099CC57824E1B2186BFD3 /* StorageScanner.swift in Sources */,
+				60C5C56CD6E65C50AFCC233F /* SystemDataView.swift in Sources */,
+				359EC5E3B8B46EE0CD0455CC /* SystemStats.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B465840A7CA7B0953CBC64A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C898882A1195C1A5FD6EAC5 /* CleanMac */;
+			targetProxy = FE84965C0FDAABDB5C92F2E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5F32F63AAC4B88240888013F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7326E376FFB7BD7C743E4C49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88D9B2DA6DF7BC0EC1D0F8BC /* Signing.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "$(CLEANMAC_SIGN_IDENTITY)";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourdevs.CleanMac;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		824AD69F9F1BF2196935FBA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88D9B2DA6DF7BC0EC1D0F8BC /* Signing.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "$(CLEANMAC_SIGN_IDENTITY)";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourdevs.CleanMac;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CD48AFF90DD4766CFD6C336E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F41B246228861BC30DF59DF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanMac.app/Contents/MacOS/CleanMac";
+			};
+			name = Release;
+		};
+		FDF7D0EC80756245B7A0D15C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanMac.app/Contents/MacOS/CleanMac";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		308F08FB0795066CE9AC4ADA /* Build configuration list for PBXNativeTarget "CleanMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				824AD69F9F1BF2196935FBA5 /* Debug */,
+				7326E376FFB7BD7C743E4C49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5AB2F4CF51C7D579CE02DC32 /* Build configuration list for PBXProject "CleanMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F32F63AAC4B88240888013F /* Debug */,
+				CD48AFF90DD4766CFD6C336E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9F924631B66581A2CEC67C0D /* Build configuration list for PBXNativeTarget "CleanMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDF7D0EC80756245B7A0D15C /* Debug */,
+				F41B246228861BC30DF59DF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E435598BB8F57054B1DB5432 /* Project object */;
+}

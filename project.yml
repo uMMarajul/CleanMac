@@ -1,0 +1,38 @@
+name: CleanMac
+options:
+  deploymentTarget:
+    macOS: "14.0"
+targets:
+  CleanMac:
+    type: application
+    platform: macOS
+    sources: [CleanMac]
+    scheme:
+      testTargets: [CleanMacTests]
+    configFiles:
+      Debug: Config/Signing.xcconfig
+      Release: Config/Signing.xcconfig
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.yourdevs.CleanMac
+        MARKETING_VERSION: 0.1.0
+        CURRENT_PROJECT_VERSION: 1
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_VERSION: "5.0"
+        # Ad hoc by default; set your own certificate in Config/Signing.local.xcconfig
+        # so Full Disk Access survives rebuilds (see Config/Signing.xcconfig).
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGN_IDENTITY: "$(CLEANMAC_SIGN_IDENTITY)"
+        ENABLE_HARDENED_RUNTIME: NO
+        ENABLE_APP_SANDBOX: NO
+  CleanMacTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources: [CleanMacTests]
+    settings:
+      base:
+        SWIFT_VERSION: "5.0"
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGN_IDENTITY: "-"
+    dependencies:
+      - target: CleanMac

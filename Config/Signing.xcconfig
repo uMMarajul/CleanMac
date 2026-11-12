@@ -1,0 +1,16 @@
+// Code signing.
+//
+// By default CleanMac is signed ad hoc ("-"), so anyone can build it.
+// macOS ties Full Disk Access to the app's signature, and an ad-hoc signature
+// changes on every build, so you would have to grant access again after each rebuild.
+//
+// To keep Full Disk Access across rebuilds, sign with your own certificate:
+// create Config/Signing.local.xcconfig (ignored by git) with a line like
+//
+//   CLEANMAC_SIGN_IDENTITY = Apple Development: you@example.com (TEAMID)
+//
+// List your certificates with: security find-identity -v -p codesigning
+
+CLEANMAC_SIGN_IDENTITY = -
+
+#include? "Signing.local.xcconfig"
